@@ -1,0 +1,15 @@
+/target
+*.log
+*.class
+*.iml
+*.jar
+*.war
+*.ear
+*.db
+/.idea/
+/.settings/
+/.classpath
+.project
+.DS_Store
+.env
+*.swp

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<meta charset="ISO-8859-1">
+	<title>Player Management System</title>
+			<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous">
+	</head>
+	<body style="background: linear-gradient(90deg, rgb(2,0,36,1) 0%, rgb(52, 70, 232) , rgb(2,0,36,1) 100%);font-family: 'Bahnschrift Condensed', Bahnschrift , monospace;">
+	<br>
+		<div class="container" style="background-color:#2d2d2e;color:#FFFFFF;">
+			
+			<h1>Club Management System</h1>
+			<hr>
+			<h2>Save Club</h2>
+	
+			<form action="#" th:action="@{/club/save}" th:object="${club}" method="POST">
+					
+					<input type="text" th:field="*{clubName}"
+					placeholder="Club Name" class="form-control mb-4 col-4">
+					
+					<input type="text" th:field="*{country}"
+					placeholder="country" class="form-control mb-4 col-4">
+					
+					<input type="text" th:field="*{stadium}"
+					placeholder="stadium" class="form-control mb-4 col-4">
+										
+					<button type="submit" class="btn btn-info col-2"> Save Club </button>
+					
+			</form>
+			
+			<hr>
+			<a th:href = "@{/}"> Back to home page</a>
+			<hr>
+		</div>
+	</body>
+</html>

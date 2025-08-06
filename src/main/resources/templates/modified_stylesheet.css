@@ -1,0 +1,36 @@
+a{
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #cb1212;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    font-family: 'Bahnschrift Condensed', Bahnschrift , monospace;
+}
+header{
+     background: linear-gradient(180deg,#0013bb 0%,#000530 100%);
+     height: 100%;
+     width: 100%;
+ }
+ div{
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #21e0c7;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+
+ }
+ h2{
+    color: #29b34b;
+    font-weight: bold;
+    font-size: 40px;
+ }

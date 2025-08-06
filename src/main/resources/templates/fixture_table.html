@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Football Club Management System</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+	
+</head>
+<body style="background: linear-gradient(90deg, rgb(2,0,36,1) 0%, rgb(52, 70, 232) , rgb(2,0,36,1) 100%);font-family: 'Bahnschrift Condensed', Bahnschrift , monospace;">
+	<div class="container my-2" style="background-color:#2d2d2e;color:#FFFFFF;">
+
+ 	<hr>
+	<h2><b>Fixtures</b></h2>
+		<table style="background-color: #1f1f1f;
+									overflow: hidden;
+									width:90%;
+									margin:0 auto;
+									font-size: 25px;
+							    	border-radius: 12px 12px 12px 12px;
+									text-align: center;
+									box-shadow: 0 2px 12px rgb(230, 229, 235, 0.3);">
+        <tr>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Stadium</th>
+            <tr>
+                <td>Manchester City FC</td>
+                <td>Liverpool FC</td>
+                <td>2024-02-25</td>
+                <td>5:00PM</td>
+                <td>Etihad Stadium</td>
+            </tr>
+            <tr>
+                <td>Tottenham Hotspur</td>
+                <td>Arsenal FC</td>
+                <td>2024-02-25</td>
+                <td>10:00PM</td>
+                <td>Tottenham Hotspur Stadium</td>
+            </tr>
+            <tr>
+                <td>Aston Villa FC</td>
+                <td>Chelsea FC</td>
+                <td>2024-02-26</td>
+                <td>10:00AM</td>
+                <td>Villa Park</td>
+            </tr>
+            <tr>
+                <td>Manchester United FC</td>
+                <td>Newcastle United FC</td>
+                <td>2024-02-26</td>
+                <td>5:00PM</td>
+                <td>Old Trafford</td>
+            </tr>
+            <tr>
+                <td>Liverpool FC</td>
+                <td>Tottenham Hotspur FC</td>
+                <td>2024-02-27</td>
+                <td>7:00PM</td>
+                <td>Anfieldk</td>
+            </tr>
+            <tr>
+                <td>Arsenal FC</td>
+                <td>Aston Villa FC</td>
+                <td>2024-02-27</td>
+                <td>10:00PM</td>
+                <td>Emirates Stadium</td>
+            </tr>
+            <tr>
+                <td>Chelsea FC</td>
+                <td>Manchester United FC</td>
+                <td>2024-02-28</td>
+                <td>5:00PM</td>
+                <td>Stamford Bridge</td>
+            </tr>
+            <tr>
+                <td>Newcastle United FC</td>
+                <td>Manchester United FC</td>
+                <td>2024-02-28</td>
+                <td>9:00PM</td>
+                <td>Anfieldk</td>
+            </tr>
+            <tr>
+                <td>Manchester City FC</td>
+                <td>Tottenham Hotspur FC</td>
+                <td>2024-02-29</td>
+                <td>7:00PM</td>
+                <td>Etihad Stadium</td>
+            </tr>
+            <tr>
+                <td>Liverpool FC</td>
+                <td>Arsenal FC</td>
+                <td>2024-02-29</td>
+                <td>10:00PM</td>
+                <td>Anfieldk</td>
+            </tr>
+            <tr>
+                <td>Tottenham Hotspur FC</td>
+                <td>Aston Villa FC</td>
+                <td>2024-03-01</td>
+                <td>7:00PM</td>
+                <td>Tottenham Hotspur</td>
+            </tr>
+            <tr>
+                <td>Arsenal FC</td>
+                <td>Chelsea FC</td>
+                <td>2024-03-01</td>
+                <td>7:00PM</td>
+                <td>Emirates Stadium</td>
+            </tr>
+            <tr>
+                <td>Aston Villa FC</td>
+                <td>Manchester United FC</td>
+                <td>2024-03-02</td>
+                <td>5:00PM</td>
+                <td>Villa Park</td>
+            </tr>
+            <tr>
+                <td>Chelsea FC</td>
+                <td>Newcastle United FC</td>
+                <td>2024-03-02</td>
+                <td>9:00PM</td>
+                <td>Stamford Bridge</td>
+            </tr>
+            <tr>
+                <td>Manchester United FC</td>
+                <td>Manchester City FC</td>
+                <td>2024-03-03</td>
+                <td>7:00PM</td>
+                <td>Old Trafford</td>
+            </tr>
+            <tr>
+                <td>Manchester City FC</td>
+                <td>Arsenal FC</td>
+                <td>2024-03-03</td>
+                <td>10:00PM</td>
+                <td>Etihad Stadium</td>
+            </tr>
+            <tr>
+                <td>Liverpool FC</td>
+                <td>Aston Villa FC</td>
+                <td>2024-03-04</td>
+                <td>5:00PM</td>
+                <td>Anfield</td>
+            </tr>
+            <tr>
+                <td>Tottenham Hotspur FC</td>
+                <td>Chelsea FC</td>
+                <td>2024-03-04</td>
+                <td>9:00PM</td>
+                <td>Tottenham Hotspur</td>
+            </tr>
+            <tr>
+                <td>Arsenal FC</td>
+                <td>Manchester United FC</td>
+                <td>2024-03-05</td>
+                <td>7:00PM</td>
+                <td>Emirates Stadium</td>
+            </tr>
+            <tr>
+                <td>Aston Villa FC</td>
+                <td>Newcastle United FC</td>
+                <td>2024-03-05</td>
+                <td>10:00PM</td>
+                <td>Villa Park</td>
+            </tr>
+            <tr>
+                <td>Chelsea FC</td>
+                <td>Manchester City FC</td>
+                <td>2024-03-06</td>
+                <td>7:00PM</td>
+                <td>Stamford Bridge</td>
+            </tr>
+            <tr>
+                <td>Manchester United FC</td>
+                <td>Liverpool FC</td>
+                <td>2024-03-06</td>
+                <td>10:00PM</td>
+                <td>Tottenham Hotspur</td>
+            </tr>
+            <tr>
+                <td>Newcastle United FC</td>
+                <td>thottenham Hotspur FC</td>
+                <td>2024-03-07</td>
+                <td>7:00PM</td>
+                <td>St.james' Park</td>
+            </tr>
+            
+    </table>
+		
+		
+	</div>
+	
+</body>
+</html>
