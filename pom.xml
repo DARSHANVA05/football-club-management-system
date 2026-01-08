@@ -8,7 +8,7 @@
 		<version>3.0.4</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.soccer</groupId>1.0.
+	<groupId>com.soccer</groupId>
 	<artifactId>soccer-league</artifactId>
 	<version>1.0.4</version>
 	<name>soccer-league</name>
