@@ -1,20 +1,23 @@
 pipeline {
-    agent any
+    agent none
 
     stages {
         stage('Checkout') {
+            agent{label "football-build"}
             steps {
                 checkout scm
             }
         }
 
         stage('Build') {
+            agent{label "football-build"}
             steps {
                 bat 'mvn clean compile'
             }
         }
 
         stage('Test') {
+            agent{label "football-test"}
             steps {
                 bat 'mvn test'
             }
