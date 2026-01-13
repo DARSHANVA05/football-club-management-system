@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            agent{label "football-build"}
+            agent{label "football-checkout"}
             steps {
                 checkout scm
             }
